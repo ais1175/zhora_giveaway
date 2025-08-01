@@ -108,7 +108,7 @@ The script supports multiple announcement systems to fit your server's setup. Yo
 ### Available Systems
 
 #### 🎯 ns_announce (Default)
-Perfect for servers using the popular ns_announce script:
+Perfect for servers using zhoras ns_announce script: (coming soon)
 
 ```lua
 Config.AnnouncementSystem = 'ns_announce'
