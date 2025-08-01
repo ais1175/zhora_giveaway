@@ -14,6 +14,18 @@ This script is primarily a **learning project** that I've developed to improve m
 
 I hope this script can be helpful for your server or inspire you in your own FiveM development journey! 🚀
 
+## 🎥 Preview & Demonstration
+
+### 📋 Admin Panel Overview
+[![Admin Panel Preview](https://streamable.com/j68w1x/mp4)](https://streamable.com/j68w1x)
+
+*Click to watch the complete admin panel walkthrough*
+
+### 🎮 Live Demonstration
+[![Live Demo](https://streamable.com/xj7grw/mp4)](https://streamable.com/xj7grw)
+
+*Click to see the giveaway system in action*
+
 ## ✨ Features
 
 ### 🎁 Versatile Giveaways
@@ -98,7 +110,7 @@ The script supports multiple announcement systems to fit your server's setup. Yo
 ### Available Systems
 
 #### 🎯 ns_announce (Default)
-Perfect for servers using ns_announce script by zhora:
+Perfect for servers using the popular ns_announce script:
 
 ```lua
 Config.AnnouncementSystem = 'ns_announce'
