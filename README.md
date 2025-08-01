@@ -16,15 +16,13 @@ I hope this script can be helpful for your server or inspire you in your own Fiv
 
 ## 🎥 Preview & Demonstration
 
-### 📋 Admin Panel Overview
-[![Admin Panel Preview](https://streamable.com/j68w1x/mp4)](https://streamable.com/j68w1x)
+<div align="center">
 
-*Click to watch the complete admin panel walkthrough*
+[![🎛️ Admin Panel Overview](https://img.shields.io/badge/🎛️-Admin%20Panel%20Overview-blue?style=for-the-badge&logo=youtube)](https://streamable.com/j68w1x)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[![🎮 Live Demonstration](https://img.shields.io/badge/🎮-Live%20Demonstration-green?style=for-the-badge&logo=youtube)](https://streamable.com/xj7grw)
 
-### 🎮 Live Demonstration
-[![Live Demo](https://streamable.com/xj7grw/mp4)](https://streamable.com/xj7grw)
-
-*Click to see the giveaway system in action*
+</div>
 
 ## ✨ Features
 
