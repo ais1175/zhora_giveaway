@@ -2,6 +2,18 @@
 
 A powerful and easy-to-use giveaway script for FiveM servers running the ESX framework. This script allows administrators to create, manage, and announce giveaways for items, money, weapons, and vehicles through a modern and intuitive React-based UI.
 
+## 📚 Disclaimer
+
+This script is primarily a **learning project** that I've developed to improve my coding skills and understanding of FiveM development. I'm sharing it with the community to see if others find it useful and enjoyable to use. 
+
+**Please note:**
+- This is an educational resource created for learning purposes
+- Feedback, suggestions, and constructive criticism are highly appreciated
+- Feel free to use, modify, or learn from the code
+- If you encounter any issues or have ideas for improvements, please let me know!
+
+I hope this script can be helpful for your server or inspire you in your own FiveM development journey! 🚀
+
 ## ✨ Features
 
 ### 🎁 Versatile Giveaways
