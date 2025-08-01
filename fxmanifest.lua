@@ -1,9 +1,9 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'Zhora/Genesis_NS'
-description 'Giveaway Script with NUI from NIGHT-Scene'
-version '1.2.0' 
+author 'github.com/zhoraFPS'
+description 'Giveaway Script with REACT NUI'
+version '1.0.0' 
 
 server_scripts {
     '@oxmysql/lib/MySQL.lua',
