@@ -1,4 +1,4 @@
-# Zhora Giveaway Script for ESX
+# Zhora Giveaway Script for FiveM
 
 A powerful and easy-to-use giveaway script for FiveM servers running the ESX framework. This script allows administrators to create, manage, and announce giveaways for items, money, weapons, and vehicles through a modern and intuitive React-based UI.
 
@@ -89,7 +89,96 @@ The `config.lua` file is extensively commented to help you customize the script.
 | `Config.Prefix` | The prefix for generated vehicle license plates |
 | `Config.DefaultGiveawayDurationMinutes` | The default duration for a giveaway in minutes |
 | `Config.DefaultMaxWinners` | The default number of winners for a giveaway |
-| `Config.AnnouncementSystem` | The announcement system to use. Options: `'ns_announce'`, `'chat'`, `'custom_event'`, `'custom_export'` |
+| `Config.AnnouncementSystem` | The announcement system to use. Options: `'ns_announce'`, `'chat'`, `'custom_event'`, `'custom_export'`. See [Customizing Announcements](#-customizing-announcements) for details |
+
+## 📢 Customizing Announcements
+
+The script supports multiple announcement systems to fit your server's setup. You can easily switch between them or add your own custom system.
+
+### Available Systems
+
+#### 🎯 ns_announce (Default)
+Perfect for servers using the popular ns_announce script:
+
+```lua
+Config.AnnouncementSystem = 'ns_announce'
+```
+
+This system automatically uses the configured styles and sender names from your ns_announce setup.
+
+#### 💬 Chat System
+Simple fallback using standard chat messages with custom styling:
+
+```lua
+Config.AnnouncementSystem = 'chat'
+```
+
+Features:
+- Custom HTML templates for styled messages
+- Configurable prefixes
+- Automatic fallback if other systems fail
+
+#### ⚙️ Custom Event System
+For servers with custom announcement scripts using events:
+
+```lua
+Config.AnnouncementSystem = 'custom_event'
+
+-- Example configuration in Config.Announcements:
+Config.Announcements.my_custom_system = {
+    type = 'event',
+    trigger = 'myServer:announce',  -- Your event name
+    defaultTitle = "Server Announcement"
+}
+```
+
+#### 📤 Custom Export System
+For announcement scripts that use exports:
+
+```lua
+Config.AnnouncementSystem = 'custom_export'
+
+-- Example configuration:
+Config.Announcements.my_export_system = {
+    type = 'export',
+    resource = 'my_announce_script',     -- Resource name
+    trigger = 'SendGlobalAnnouncement',  -- Export function name
+    defaultTitle = "Important Notice"
+}
+```
+
+### Adding Your Own System
+
+1. **Define your system** in `Config.Announcements`:
+
+```lua
+Config.Announcements.my_system = {
+    type = 'event',  -- or 'export'
+    trigger = 'your_event_name',
+    defaultTitle = "Custom Title",
+    -- Add any custom parameters you need
+}
+```
+
+2. **Set it as active**:
+
+```lua
+Config.AnnouncementSystem = 'my_system'
+```
+
+3. **Modify parameters** (if needed):
+   - Edit the `SendAnnouncement` function in `server.lua`
+   - Adjust parameter passing for your specific system's requirements
+
+### Message Types
+
+The system automatically handles different message types:
+- **Info** - General giveaway announcements
+- **Success** - Winner announcements  
+- **Warning** - No participants notifications
+- **Error** - Cancellation messages
+
+Each type can have different styling based on your announcement system's capabilities.
 
 ## 🎮 Usage
 
