@@ -1,9 +1,9 @@
 Config = {}
 
 -- ##################################################################################
--- ## NEUE: Language                                                     ##
+-- ## NEW: Language                                                     ##
 -- ##################################################################################
-Config.Language = 'de' -- de or en (default is 'de' for German)
+Config.Language = 'en' -- de or en (default is 'de' for German)
 Config.UseFallbackLanguage = true -- If true, fallback to Config.FallbackLanguage if primary language translation is missing
 Config.FallbackLanguage = 'de' -- Fallback Translation
 
@@ -35,16 +35,16 @@ Config.MaxGiveawayHistoryEntries = 30
 -- ## NEW: Configuration for Announcements                                        ##
 -- ##################################################################################
 -- Choose the system that should be used for announcements here.
--- Possible values: 'ns_announce', 'chat', 'custom_event', 'custom_export'
+-- Possible values: 'zhora_announce', 'chat', 'custom_event', 'custom_export'
 -- You can define additional systems in Config.Announcements below.
-Config.AnnouncementSystem = 'ns_announce' -- Default is ns_announce
+Config.AnnouncementSystem = 'zhora_announce' -- Default is zhora_announce
 
 Config.Announcements = {
-    -- Configuration for ns_announce (Popular announcement system)
-    ns_announce = {
+    -- Configuration for zhora_announce (Popular announcement system)
+    zhora_announce = {
         type = 'event',                                 -- Type of interaction: 'event' or 'export'
-        trigger = 'ns_announce:trigger',                -- Name of the server event or export function                  
-                                                        -- Parameters for ns_announce: message, source_name, style
+        trigger = 'zhora_announce:trigger',                -- Name of the server event or export function                  
+                                                        -- Parameters for zhora_announce: message, source_name, style
         defaultSourceName = "🎁 Giveaway 🎁",          -- Default sender name for the announcement
         defaultStyleInfo = "info",                      -- Default style for info messages
         defaultStyleSuccess = "success",                -- Default style for success messages
@@ -132,6 +132,7 @@ Locales = {
         ['new_item_title'] = "Neues Item definieren",
         ['item_def_label_label'] = "Anzeige-Label (z.B. \"10x Brot\", \"Seltenes Auto\"):",
         ['item_def_type_label'] = "Typ:",
+        ['giveaway_starting'] = "Giveaway startet!",
         ['item_def_type_money'] = "Bargeld (ESX)",
         ['item_def_type_black_money'] = "Schwarzgeld (ESX)",
         ['item_def_type_license'] = "Lizenz (ESX)",
@@ -201,6 +202,7 @@ Locales = {
         ['invalid_item_name_esx'] = "ERROR: The item name '%s' does not exist in the current inventory system or could not be validated.",
         ['failed_to_give_item_ox'] = "Failed to give item: %s. Reason: %s",
         ['item_def_type_item'] = "Item (from inventory)",
+        ['giveaway_starting'] = "Giveaway starting!",
         ['item_def_ox_item_label'] = "Item (from active inventory):",
         ['failed_to_give_item_esx'] = "Failed to give item. Make sure you have enough space for '%s'.",
         ['giveaway_started_by'] = "🎉 <b>GIVEAWAY STARTED!</b> 🎉<br><b>Admin:</b> %s<br><b>Prize:</b> %s<br><b>Amount:</b> %s<br><b>There are %s winners.</b><br><b>Enter with:</b> `/enter`.<br><b>The giveaway ends in %s minutes.</b>",
