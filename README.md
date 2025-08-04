@@ -204,7 +204,7 @@ Each type can have different styling based on your announcement system's capabil
 The admin panel is divided into three tabs:
 
 ### 📝 Start Giveaway
-- Select a pre-configured item from the dropdown
+- Select  a pre-configured item from the dropdown
 - Set the quantity (if applicable), duration, and number of winners
 - Click "Start & Announce Giveaway" to begin
 
